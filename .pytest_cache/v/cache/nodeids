@@ -1,0 +1,5 @@
+[
+  "tests/test_cleaning.py::test_fill_missing_numeric",
+  "tests/test_cleaning.py::test_remove_duplicates",
+  "tests/test_cleaning.py::test_validate_aqi_range_fails"
+]

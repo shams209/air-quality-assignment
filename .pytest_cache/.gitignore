@@ -1,0 +1,17 @@
+# Environments
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Data (keep cleaned dataset, ignore the rest)
+data/raw/*.csv
+data/my_predictions.csv
+data/new_data_test.csv
+
+# Mac/Windows junk
+.DS_Store
+Thumbs.db
