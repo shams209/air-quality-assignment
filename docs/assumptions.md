@@ -1,0 +1,2 @@
+## Why Median Imputation? (Data Evidence)
+Looking at the exploratory data, we can see extreme variations in pollution levels (e.g., Los Angeles average AQI is 136.3, while San Diego is 93.7). Because environmental data is heavily right-skewed with extreme outlier days (e.g., wildfires or heavy traffic), using the Mean (average) would pull the imputed values too high. The Median represents the true "middle" day of air quality and prevents extreme pollution events from distorting the missing-value replacements.

@@ -1,5 +1,5 @@
 # Name: Shams ur Rehman
-# Roll Number: TRN-2026-000943
+# Roll Number: [Your Roll Number]
 # Date: 2026-11-18
 
 import pandas as pd
@@ -15,7 +15,6 @@ def test_remove_duplicates():
 def test_fill_missing_numeric():
     df = pd.DataFrame({'AQI': [50.0, 60.0, None, 70.0]})
     result = fill_missing_numeric(df)
-    # Median of 50, 60, 70 is 60. None should become 60.0
     assert result['AQI'].isnull().sum() == 0
     assert result['AQI'][2] == 60.0
 
