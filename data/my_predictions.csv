@@ -1,0 +1,3 @@
+Date,City,AQI,PM2.5,PM10,Ozone,NO2,CO,SO2,Temperature,Humidity,Predicted_AQI
+2026-11-20,Chicago,,25.0,50.0,60.0,45.0,2.0,15.0,20.0,60.0,108.63
+2026-11-20,Los Angeles,,35.0,75.0,70.0,50.0,2.5,18.0,25.0,50.0,145.12

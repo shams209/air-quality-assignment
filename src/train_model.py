@@ -1,6 +1,7 @@
 # Name: Shams ur Rehman
 # Roll Number: TRN-2026-000943
 # Date: 2026-11-20
+
 import pandas as pd
 import numpy as np
 import os
@@ -74,6 +75,7 @@ def main():
         print(f"   --- {name} ---")
         print(f"   MAE: {mae:.2f} | RMSE: {rmse:.2f} | R2: {r2:.2f}")
         
+        # Check if this model is the best one so far
         if r2 > best_r2:
             best_r2 = r2
             best_model = pipeline
@@ -88,9 +90,11 @@ def main():
     print("\n6. Saving the best model...")
     model_path = os.path.join(BASE_DIR, 'models', 'aqi_model.joblib')
     os.makedirs(os.path.dirname(model_path), exist_ok=True)
+    # This saves whichever model got the highest R2 score
     joblib.dump(best_model, model_path)
     print(f"   Saved model to: {model_path}")
     print("\nPipeline complete! You have finished Part B.")
 
 if __name__ == "__main__":
     main()
+
